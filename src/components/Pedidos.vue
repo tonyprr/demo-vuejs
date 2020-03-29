@@ -1,5 +1,10 @@
 <template>
   <div  class="hello">
+    <section>
+      <input type="text" v-model="newOrden.cliente"/>
+      <button @click="agregarOrden(newOrden)">agregar</button>
+    </section>
+
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -21,10 +26,20 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   name: 'Cocina',
   props: {
     msg: String
+  },
+  data: function () {
+    return {
+      newOrden: { cliente: '' }
+    }
+  },
+  methods: {
+    ...mapActions(['agregarOrden'])
   },
   created () {
     this.$store.dispatch('listarOrdenes')
