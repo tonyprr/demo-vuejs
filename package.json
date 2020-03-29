@@ -5,16 +5,20 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "test:unit": "vue-cli-service test:unit --notify --config=jest.config.json",
+    "clear_jest": "jest --clearCache",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "firebase": "^7.13.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
+    "vuefire": "^2.2.2",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@babel/code-frame": "^7.8.3",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-router": "~4.2.0",
@@ -30,8 +34,10 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.1.2",
+    "mock-cloud-firestore": "^0.11.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
+    "vue-jest": "^3.0.5",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

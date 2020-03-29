@@ -1,0 +1,26 @@
+{
+  "name": "my-project",
+  "verbose": false,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "**/*.{js,vue}",
+    "!**/node_modules/**",
+    "!src/main.js"
+  ],
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "moduleNameMapper": {
+    "@/(.*)$": "<rootDir>/src/$1",
+    "^vue$": "vue/dist/vue.common.js"
+  },
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "vue"
+  ],
+  "transform": {
+    ".*\\.(vue)$": "vue-jest",
+    "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+  }
+}

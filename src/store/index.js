@@ -7,6 +7,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    dataPedido: [],
     ordenes: [],
     ingresoTotal: 0
   },

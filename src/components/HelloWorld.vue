@@ -4,11 +4,6 @@
     <p>
       Página principal
     </p>
-    <h3>Ordenes</h3>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-    </ul>
   </div>
 </template>
 

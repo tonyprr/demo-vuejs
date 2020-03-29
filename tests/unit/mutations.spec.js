@@ -1,6 +1,6 @@
 // mutations.spec.js
 
-import { guardarOrden } from '@/store/mutations'
+import { guardarOrden } from '@/store/mutations.js'
 
 test('Saving orden', () => {
   const state = {
@@ -9,7 +9,7 @@ test('Saving orden', () => {
   }
   const orden = {
     cliente: 'Antonio',
-    id: '0001',
+    id: '10001',
     items: []
   }
   guardarOrden(state, orden)
